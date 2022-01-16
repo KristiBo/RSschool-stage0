@@ -257,8 +257,7 @@ h4 {
 
 .button-item {
   padding-inline-start: 1px;
-  padding-right: 4px;
-  
+  padding-right: 4px;  
 }
 
 .photo-list {
@@ -308,7 +307,6 @@ h4 {
   flex-wrap: wrap;
   gap: 25px;
   padding-top: 60px;
-  
 }
 
 .price-list {
@@ -338,4 +336,57 @@ h4 {
   font-size: 18px;
   line-height: 36px;
   text-align: center;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+  width: 1440px;
+  height: 700px;
+  background: url('./assets/img/contacts-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contacts-section {
+  padding-top: 60px;
+}
+
+.contacts-title {
+  text-align: left;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 41px;
+}
+
+.contacts-area {
+  padding: 0 22px;
+  min-height: 50px;
+  border: 2px solid #bdae82;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.contacts-area::placeholder {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+}
+
+.contacts-textarea {
+  resize: none;
+}
+
+.contacts-form button {
+  margin-top: 10px;
 }
