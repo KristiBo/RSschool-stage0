@@ -82,12 +82,12 @@ h4 {
   display: flex;
   width: 50px;
   height: 50px;
+  cursor: pointer;
   transition: 0.5s;
 }
 
 .logo:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-  cursor: pointer;
 }
 
 .nav {
@@ -108,11 +108,11 @@ h4 {
   text-decoration: none;
   line-height: 50px;
   color: #ffffff;
+  transition: 0.5s;
 }
 
 .nav-link:hover {
   color: #bdae82;
-  transition: 0.5s;
 }
 
 .lang-container {
@@ -150,11 +150,11 @@ h4 {
   color: #bdae82;
   background-color: transparent;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .button:hover {
   color: #ffffff;
-  transition: 0.5s;
 }
 
 .button-colored {
@@ -221,15 +221,15 @@ h4 {
   background-image: url(./assets/svg/video.svg); 
 }
 
- .item-image {
+.item-image {
   background-image: url(./assets/svg/image.svg); 
 }
 
- .item-mic {
+.item-mic {
   background-image: url(./assets/svg/mic.svg); 
 }
 
- .skills-title {
+.skills-title {
   padding-top: 20px;
 }
 
@@ -273,3 +273,27 @@ h4 {
   padding-bottom: 20px;
 }
 
+.video-section {
+  padding-top: 75px;
+}
+
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.video-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  transition: 0.5s;
+}
+
+.video-button:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
