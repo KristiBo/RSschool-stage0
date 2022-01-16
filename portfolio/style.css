@@ -297,3 +297,45 @@ h4 {
 .video-button:hover {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
+
+.price-section {
+  padding-top: 100px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 60px;
+  
+}
+
+.price-list {
+  justify-content: space-between;
+  width: 450px;
+  height: 505px;
+  padding: 40px 0;
+  border: solid 3px #bdae82;
+}
+
+.price-usd {
+  display: inline-block;
+  padding-top: 20px;
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+  color: #bdae82;
+}
+
+.price-content {
+  padding: 20px 0 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+}
