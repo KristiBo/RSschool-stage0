@@ -72,19 +72,17 @@ h4 {
 .header-container {
   display: flex;
   align-items: center;
-  margin: 0;
   height: 90px;
   background: url('./assets/img/bg.jpg');
   background-repeat: no-repeat;
   background-position: center 0;
-    
 }
 
 .logo {
   display: flex;
   width: 50px;
   height: 50px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .logo:hover {
@@ -94,7 +92,7 @@ h4 {
 
 .nav {
   margin-left: auto;
-  margin-right: 38px;
+  margin-right: 35px;
 }
 
 .nav-list {
@@ -110,7 +108,7 @@ h4 {
   text-decoration: none;
   line-height: 50px;
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .nav-link:hover {
@@ -118,7 +116,7 @@ h4 {
 }
 
 .lang-container {
-  margin-right: 1px;
+  padding-right: 1px;
   font-weight: bold;
   line-height: 50px;
   text-align: center;
@@ -130,7 +128,6 @@ h4 {
 }
 
 .hero-container {
-  margin: 0;
   width: 1440px;
   height: 910px;
   background-image: url('./assets/img/bg.jpg');
@@ -141,6 +138,8 @@ h4 {
 .button {
   margin: 0;
   border: 0;
+  width: 220px;
+  height: 55px;
   font-family: inherit;
   font-size: 20px;
   color: #bdae82;
@@ -150,11 +149,10 @@ h4 {
 
 .button:hover {
   color: #ffffff;
+  transition: 0.5s;
 }
 
 .button-colored {
-  width: 220px;
-  height: 55px;
   line-height: 40px;
   background-color: #bdae82;
   color: #000000;
@@ -167,9 +165,35 @@ h4 {
 
 .hero-section {
   margin: 0;
-  padding: 160px 0 0 60px;
+  padding: 160px 0 5px 60px;
   width: 530px;
   line-height: 40px; 
+}
+
+.hero-section .button {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;  
+}
+
+.section-title::before {
+  content: "";
+  margin-right: 20px;
+  flex-basis: 50%;
+  border-bottom: 2px solid #bdae82;
+}
+
+.section-title::after {
+  content: "";
+  margin-left: 20px;
+  flex-basis: 50%;
+  border-bottom: 2px solid #bdae82;
 }
 
 .skills-list {
@@ -194,23 +218,22 @@ h4 {
 
 .item-video {
   background-image: url(./assets/svg/video.svg); 
- }
+}
 
  .item-image {
   background-image: url(./assets/svg/image.svg); 
- }
+}
 
  .item-mic {
   background-image: url(./assets/svg/mic.svg); 
- }
+}
 
  .skills-title {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .skills-description {
-  margin-top: 22px;
-  padding: 0 20px;
+  padding: 3px 20px 0;
   font-family: "Inter", sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -218,3 +241,4 @@ h4 {
   line-height: 36px;
   text-align: center;
 }
+
