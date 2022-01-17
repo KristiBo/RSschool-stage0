@@ -3,7 +3,7 @@
 }
 
 html {
-  scroll-behavior: smooth;   
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 
 ul {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   list-style: none;
 }
 
@@ -95,7 +95,7 @@ h4 {
 
 .nav {
   margin-left: auto;
-  margin-right: 35px;
+  margin-right: 30px;
 }
 
 .nav-list {
@@ -119,14 +119,21 @@ h4 {
 }
 
 .lang-container {
-  padding-right: 1px;
   font-weight: bold;
   line-height: 50px;
   text-align: center;
-  cursor: pointer;
 }
 
 .language-on {
+  cursor: pointer;
+  color: #bdae82;
+}
+
+.language-off {
+  cursor: pointer;
+}
+
+.language-off:hover {
   color: #bdae82;
 }
 
@@ -175,7 +182,7 @@ h4 {
   margin: 0;
   padding: 160px 0 5px 60px;
   width: 530px;
-  line-height: 40px; 
+  line-height: 40px;
 }
 
 .section-title {
@@ -183,7 +190,7 @@ h4 {
   justify-content: center;
   align-items: center;
   max-width: 700px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 .section-title::before {
@@ -217,19 +224,19 @@ h4 {
 }
 
 .item-camera {
-  background-image: url(./assets/svg/camera.svg); 
+  background-image: url(./assets/svg/camera.svg);
 }
 
 .item-video {
-  background-image: url(./assets/svg/video.svg); 
+  background-image: url(./assets/svg/video.svg);
 }
 
 .item-image {
-  background-image: url(./assets/svg/image.svg); 
+  background-image: url(./assets/svg/image.svg);
 }
 
 .item-mic {
-  background-image: url(./assets/svg/mic.svg); 
+  background-image: url(./assets/svg/mic.svg);
 }
 
 .skills-title {
@@ -260,7 +267,7 @@ h4 {
 
 .button-item {
   padding-inline-start: 1px;
-  padding-right: 4px;  
+  padding-right: 4px;
 }
 
 .photo-list {
@@ -268,7 +275,7 @@ h4 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 60px;  
+  padding-top: 60px;
 }
 
 .photo {
@@ -396,14 +403,19 @@ h4 {
 
 .footer-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 150px;
 }
 
+.github-link,
 .icon-list {
   display: flex;
+  gap: 20px;
+}
+
+.rs-link {
+  padding-left: 16px;
 }
 
 a {
