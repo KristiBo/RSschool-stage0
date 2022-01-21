@@ -67,7 +67,7 @@ h4 {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -131,6 +131,7 @@ h4 {
 
 .language-off {
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .language-off:hover {
@@ -138,7 +139,7 @@ h4 {
 }
 
 .hero-container {
-  width: 1440px;
+  max-width: 1440px;
   height: 910px;
   background-image: url('./assets/img/bg.jpg');
   background-position: center -90px;
@@ -257,29 +258,23 @@ h4 {
   padding-top: 91px;
 }
 
-.button-list {
+.buttons-portfolio {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
   padding-top: 60px;
+  gap: 5px;
 }
 
-.button-item {
-  padding-inline-start: 1px;
-  padding-right: 4px;
-}
-
-.photo-list {
+.photo-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
   padding-top: 60px;
 }
 
 .photo {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .video-section {
@@ -352,7 +347,7 @@ h4 {
   display: flex;
   justify-content: flex-end;
   margin-top: 100px;
-  width: 1440px;
+  max-width: 1440px;
   height: 700px;
   background: url('./assets/img/contacts-bg.jpg');
   background-position: center center;
@@ -375,7 +370,7 @@ h4 {
 }
 
 .contacts-area {
-  padding: 0 22px;
+  padding: 0 16px;
   min-height: 50px;
   border: 2px solid #bdae82;
   background-color: rgba(0, 0, 0, 0.5);

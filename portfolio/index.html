@@ -16,7 +16,9 @@
 <body>
 <header class="header">
   <div class="container header-container">
-    <img class="logo" src="./assets/svg/logo.svg" alt="logo">
+    <a href="https://rolling-scopes-school.github.io/kristibo-JSFEPRESCHOOL/portfolio/">
+     <img class="logo" src="./assets/svg/logo.svg" alt="logo">
+    </a>
     <nav class="nav">
       <ul class="nav-list">
         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
@@ -68,20 +70,20 @@
   <div class="container">
     <section class="section portfolio-section" id="portfolio">
       <h2 class="section-title">Portfolio</h2>
-      <ul class="button-list">
-        <li class="button-item"><button class="button">Winter</button></li>
-        <li class="button-item"><button class="button">Spring</button></li>
-        <li class="button-item"><button class="button">Summer</button></li>
-        <li class="button-item"><button class="button button-colored">Autumn</button></li>
-      </ul>
-      <ul class="photo-list">
-        <li class="photo-item"><img class="photo" src="./assets/img/portfolio-img1.jpg" alt="photo1"></li>
-        <li class="photo-item"><img class="photo" src="./assets/img/portfolio-img2.jpg" alt="photo2"></li>
-        <li class="photo-item"><img class="photo" src="./assets/img/portfolio-img3.jpg" alt="photo3"></li>
-        <li class="photo-item"><img class="photo" src="./assets/img/portfolio-img4.jpg" alt="photo4"></li>
-        <li class="photo-item"><img class="photo" src="./assets/img/portfolio-img5.jpg" alt="photo5"></li>
-        <li class="photo-item"><img class="photo" src="./assets/img/portfolio-img6.jpg" alt="photo6"></li>
-      </ul>
+      <div class="buttons-portfolio">
+        <button class="button">Winter</button>
+        <button class="button">Spring</button>
+        <button class="button">Summer</button>
+        <button class="button button-colored">Autumn</button>
+      </div>
+      <div class="photo-container">
+        <img class="photo" src="./assets/img/portfolio-img1.jpg" alt="photo1">
+        <img class="photo" src="./assets/img/portfolio-img2.jpg" alt="photo2">
+        <img class="photo" src="./assets/img/portfolio-img3.jpg" alt="photo3">
+        <img class="photo" src="./assets/img/portfolio-img4.jpg" alt="photo4">
+        <img class="photo" src="./assets/img/portfolio-img5.jpg" alt="photo5">
+        <img class="photo" src="./assets/img/portfolio-img6.jpg" alt="photo6">
+      </div>
     </section>
   </div>
   <div class="container">
@@ -142,7 +144,7 @@
       <form class="contacts-form" action="#">
         <input class="contacts-area" type="email" name="e-mail" placeholder="E-mail">
         <input class="contacts-area" type="tel" name="phone" placeholder="Phone">
-        <textarea class="contacts-area contacts-textarea" name="message" rows="4" cols="35" placeholder="Message"></textarea>
+        <textarea class="contacts-area contacts-textarea" name="message" rows="4" cols="37" placeholder="Message"></textarea>
         <button class="button button-colored">Send message</button>
       </form>
     </section>
