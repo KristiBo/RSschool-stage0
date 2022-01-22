@@ -35,6 +35,14 @@ h1 {
   line-height: 120px;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 64px;
+  }
+}
+
 h2 {
   margin: 0;
   font-family: "Merriweather", serif;
@@ -44,6 +52,13 @@ h2 {
   line-height: 80px;
   text-align: center;
   color: #bdae82;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 h3 {
@@ -81,12 +96,24 @@ h4 {
   background-position: center 0;
 }
 
+@media (max-width: 768px) {
+  .header-container {
+  background-image: url('./assets/img/bg-768.jpg');
+  }
+}
+
 .logo {
   display: flex;
   width: 50px;
   height: 50px;
   cursor: pointer;
   transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 40px;
+  }
 }
 
 .logo:hover {
@@ -146,9 +173,23 @@ h4 {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .hero-container {
+  height: 500px;
+  background-image: url('./assets/img/bg-768.jpg');
+  }
+}
+
 .hero-text {
   margin: 0 0 25px;
   padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    margin: 0 0 60px;
+    padding-top: 20px;
+  }
 }
 
 .button {
@@ -179,11 +220,25 @@ h4 {
   padding-top: 10px;
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding-top: 100px;
+  }
+}
+
 .hero-section {
   margin: 0;
   padding: 160px 0 5px 60px;
   width: 530px;
   line-height: 40px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 78px 0 0 40px;
+    width: 430px;
+    line-height: 24.2px;
+  }
 }
 
 .section-title {
@@ -192,6 +247,12 @@ h4 {
   align-items: center;
   max-width: 700px;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    max-width: 364px;
+  }
 }
 
 .section-title::before {
@@ -217,12 +278,26 @@ h4 {
   gap: 40px;
 }
 
+@media (max-width: 768px) {
+  .skills-list {
+    padding-top: 65px;
+    padding-right: 4px;
+    gap: 24px;
+  }
+}
+
 .skills-item {
   margin: 0;
   padding-top: 80px;
   max-width: 320px;
   background-position: center top;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .skills-item {
+    padding-top: 60px;
+  }
 }
 
 .item-camera {
@@ -247,16 +322,26 @@ h4 {
 
 .skills-description {
   padding: 3px 20px 0;
-  font-family: "Inter", sans-serif;
-  font-weight: normal;
-  font-style: normal;
   font-size: 18px;
   line-height: 36px;
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .skills-description {
+    padding-bottom: 32px;
+    line-height: 22px;
+  }
+}
+
 .portfolio-section {
   padding-top: 91px;
+}
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding-top: 130px;
+  }
 }
 
 .buttons-portfolio {
@@ -265,6 +350,12 @@ h4 {
   justify-content: center;
   padding-top: 60px;
   gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .buttons-portfolio {
+    padding-top: 70px;
+  }
 }
 
 .photo-container {
