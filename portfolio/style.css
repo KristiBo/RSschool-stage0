@@ -354,7 +354,7 @@ h4 {
 
 @media (max-width: 768px) {
   .buttons-portfolio {
-    padding-top: 70px;
+    padding: 70px 30px 0;
   }
 }
 
@@ -564,14 +564,39 @@ h4 {
   height: 150px;
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 27px;
+    max-width: 270px;
+    height: 190px;
+  }
+}
+
 .github-link,
 .icon-list {
   display: flex;
   gap: 20px;
 }
 
+@media (max-width: 768px) {
+  .github-link {
+    margin-top: -5px;
+    gap: 21px;
+  }
+}
+
 .rs-link {
   padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .rs-link {
+    margin-top: -10px;
+    padding: 0;
+  }
 }
 
 a {
