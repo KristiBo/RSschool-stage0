@@ -179,11 +179,12 @@ h4 {
     position: fixed;
     margin: 0;
     top: 0;
-    padding-top: 134px;
+    padding-top: 139px;
     right: -100%;
     width: 80%;
     height: 100%;
     background-color: #000000;
+    box-shadow: -150px 0 150px rgba(0, 0, 0, 0.5);
     transition: right 0.5s;
     overflow: auto;
   }
@@ -197,8 +198,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 127px;
-    gap: 16px;
+    margin-left: 120px;
   }
 
   .nav-link {
