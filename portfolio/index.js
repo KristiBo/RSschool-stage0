@@ -1,4 +1,4 @@
-console.log('1. Вёрстка соответствует макету. Ширина экрана 768px +48\n2. Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15\n3. На ширине экрана 768рх и меньше реализовано адаптивное меню +22');
+console.log();
 
 const iconBurger = document.querySelector('.burger');
 const menuBurger = document.querySelector('.nav');
@@ -9,8 +9,20 @@ iconBurger.addEventListener('click', function openMenu() {
 });
 
 const menuLinks = document.querySelectorAll('.nav-link');
-menuBurger.addEventListener('click', function linkOpen() {
+menuLinks.forEach(el => el.addEventListener('click', function linkOpen() {
   document.body.classList.remove('lock');
   iconBurger.classList.remove('open');
   menuBurger.classList.remove('open');
+}));
+
+const portfolioButtons = document.querySelector('.buttons-portfolio');
+const portfolioButton = document.querySelectorAll('.portfolio-btn');
+const portfolioPhoto = document.querySelectorAll('.photo');
+portfolioButtons.addEventListener('click', function changePhoto(event) {
+  if(event.target.classList.contains('portfolio-btn')) {
+    const season = event.target.dataset.season;
+    portfolioPhoto.forEach((img, index) => img.src = `./assets/img/${season}/${index + 1}.jpg`);
+    portfolioButton.forEach(el => el.classList.remove('button-colored'));
+    event.target.classList.toggle('button-colored');
+  };
 });
