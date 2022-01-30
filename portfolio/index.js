@@ -26,3 +26,23 @@ portfolioButtons.addEventListener('click', function changePhoto(event) {
     event.target.classList.toggle('button-colored');
   };
 });
+
+import i18Obj from "./translate.js";
+const langRu = document.querySelector('.lang-ru');
+const langEn = document.querySelector('.lang-en');
+const words = document.querySelectorAll('[data-i18]');
+function getTranslate(lang) {
+  words.forEach(el => el.textContent = i18Obj[lang][el.dataset.i18]);
+};
+langRu.addEventListener('click', () => {
+  getTranslate('ru');
+  langEn.classList.remove('lang-active');
+  langRu.classList.remove('lang-active');
+  langRu.classList.toggle('lang-active');
+});
+langEn.addEventListener('click', () => {
+  getTranslate('en');
+  langRu.classList.remove('lang-active');
+  langEn.classList.remove('lang-active');
+  langEn.classList.toggle('lang-active');
+});

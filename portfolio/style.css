@@ -128,17 +128,19 @@ h4 {
   text-align: center;
 }
 
-.language-on {
-  cursor: pointer;
-  color: #bdae82;
-}
-
-.language-off {
+.lang-ru,
+.lang-en {
   cursor: pointer;
   transition: 0.5s;
 }
 
-.language-off:hover {
+.lang-active {
+  color: #bdae82;
+  cursor: default;
+}
+
+.lang-ru:hover,
+.lang-en:hover {
   color: #bdae82;
 }
 
