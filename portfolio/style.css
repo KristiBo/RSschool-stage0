@@ -387,6 +387,18 @@ h4 {
   color: #000000;
 }
 
+.btn-animated:hover,
+.btn-animated:focus {
+	box-shadow: 0 0 0 15px rgba(189, 174, 130, 0);
+	animation: pulse 1.5s infinite;  
+}
+
+@keyframes pulse {
+	0% {
+    box-shadow: 0 0 0 0 #bdae82;
+  }
+}
+
 .section {
   text-align: center;
   padding-top: 10px;
