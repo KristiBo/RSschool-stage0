@@ -46,3 +46,15 @@ langEn.addEventListener('click', () => {
   langEn.classList.remove('lang-active');
   langEn.classList.toggle('lang-active');
 });
+
+const elForChange = ['body', '.skills-section', '.portfolio-section', '.video-section', '.price-section', '.portfolio-btn', '.section-title', '.nav', '.nav-link', '.burger'];
+const themeBtn = document.querySelector('.theme-btn');
+themeBtn.addEventListener('click', changeTheme);
+function changeTheme() {
+  themeBtn.classList.remove('sun-btn');
+  themeBtn.classList.toggle('moon-btn');
+  themeBtn.classList.toggle('sun-btn');
+  elForChange.forEach((el) => {
+    document.querySelectorAll(el).forEach((el) => el.classList.toggle('sun-theme'));
+  });
+};
