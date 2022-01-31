@@ -1,4 +1,4 @@
-console.log();
+console.log('1. Смена изображений в секции portfolio +25\n2. Перевод страницы на два языка +25\n3. Переключение светлой и тёмной темы +25');
 
 const iconBurger = document.querySelector('.burger');
 const menuBurger = document.querySelector('.nav');
