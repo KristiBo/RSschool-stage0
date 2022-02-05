@@ -10,11 +10,22 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: 'Permanent Marker', cursive;
-  font-size: 36px;
+  font-size: 22px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  left: 0; 
+  right: 0;
+  top: 0; 
+  bottom: 0;
+  z-index: -1;
   background-image: url('./assets/image/bcgsong1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  filter: blur(5px);
 }
 
 .container {
@@ -27,28 +38,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
-.player {  
+.player {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 500px;
+  max-width: 450px;
   max-height: 800px;
-  width: 100vh;
-  height: 100vh;
-  margin: 0 auto;
-  border: 3px solid #010011;
+  width: 100%;
+  margin: 50px auto;
+  border: 2px solid #010014;
   border-radius: 20px;
   background: linear-gradient(to bottom, rgba(133,189,224,1) 0%, rgba(47,83,111,1) 100%);
+  box-shadow: 0px 0px 30px 20px rgba(1,0,20,1);
 }
 
 .song-img {
-  max-width: 400px;
-  margin-top: 40px;
+  max-width: 300px;
+  width: 100%;
+  margin: 50px auto;
   border-radius: 20px;
+  box-shadow: 0px 0px 30px 10px rgba(1,0,20,1);
 }
 
 .song-name {
@@ -56,34 +68,80 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-size: 36px;
 }
 
-.button {
+.track {
+  color: #010014;
+}
+
+.artist {
+  font-size: 32px;
+  color: #800000;
+}
+
+.progress-line {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.song-progress {
+  background: #010014;
+  border-radius: 5px;
+  height: 10px;
+  width: 20px;
+}
+
+.player-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 5px;
+  gap: 40px;
+}
+
+.button {  
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
-/*.prev-btn {
-  
+.button:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(101%);
 }
 
-.play-btn {
-  
+.prev-img,
+.next-img {
+  width: 30px;
+  height: 30px;
 }
 
-.next-btn {
-  
-}*/
+.play-img {
+  width: 70px;
+  height: 70px;
+}
+
+.footer {
+  max-width: 100%;
+}
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
   max-width: 100%;
-  padding: 20px;
-  background-color: #fff;
+  background: linear-gradient(to bottom, rgba(133,189,224,1) 0%, rgba(47,83,111,1) 100%);
 }
 
 .year-github {
@@ -93,16 +151,22 @@ body {
   gap: 20px;
 }
 
-.github-link {
-  transition: 1s;
-}
-
+.github-link,
 .rs-link {
-  width: 300px;
   transition: 1s;
 }
 
 .github-link:hover,
 .rs-link:hover {
-  filter: invert(83%) sepia(0%) saturate(820%) hue-rotate(191deg) brightness(90%) contrast(101%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(101%);
+}
+
+.github {
+  max-width: 50px;
+  width: 100%;
+}
+
+.rs {
+  max-width: 140px;
+  width: 100%;
 }
