@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 36px;
+  background-image: url('./assets/image/bcgsong1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.player {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  max-height: 800px;
+  width: 100vh;
+  height: 100vh;
+  margin: 0 auto;
+  border: 3px solid #010011;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, rgba(133,189,224,1) 0%, rgba(47,83,111,1) 100%);
+}
+
+.song-img {
+  max-width: 400px;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.song-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*.prev-btn {
+  
+}
+
+.play-btn {
+  
+}
+
+.next-btn {
+  
+}*/
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.year-github {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.github-link {
+  transition: 1s;
+}
+
+.rs-link {
+  width: 300px;
+  transition: 1s;
+}
+
+.github-link:hover,
+.rs-link:hover {
+  filter: invert(83%) sepia(0%) saturate(820%) hue-rotate(191deg) brightness(90%) contrast(101%);
+}
