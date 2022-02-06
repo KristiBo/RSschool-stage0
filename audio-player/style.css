@@ -98,7 +98,7 @@ body::before {
   background: #010014;
   border-radius: 5px;
   height: 10px;
-  width: 20px;
+  transition: 0.2s;
 }
 
 .player-buttons {

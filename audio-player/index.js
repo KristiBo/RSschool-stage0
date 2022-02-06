@@ -68,3 +68,14 @@ function prevSong() {
 
 nextBtn.addEventListener('click', nextSong);
 prevBtn.addEventListener('click', prevSong);
+song.addEventListener('ended', nextSong);
+
+song.addEventListener('timeupdate', (event) => {
+  let progressLevel = (event.target.currentTime / event.target.duration) * 100;
+  songProgress.style.width = `${progressLevel}%`;
+});
+
+progressLine.addEventListener('click', (event) => {
+  let fullProgress = progressLine.clientWidth;
+  song.currentTime = (event.offsetX / fullProgress) * song.duration;
+});
