@@ -31,3 +31,40 @@ playBtn.addEventListener('click', () => {
     playSong();
   };
 });
+
+const trackNames = ['Hurricane', 'Bleed It Out', 'Meds'];
+const artistNames = ['Thirty Seconds To Mars', 'Linkin Park', 'Placebo'];
+let trackNameIndex = 0;
+let artistNameIndex = 0;
+
+function startSong (trackName, artistName) {
+  track.innerHTML = trackName;
+  artist.innerHTML = artistName;
+  song.src = `./assets/audio/${trackName}.mp3`;
+  songImg.src = `./assets/image/bcgsong${trackNameIndex + 1}.jpg`;
+};
+
+function nextSong() {
+  trackNameIndex ++;
+  artistNameIndex ++;
+  if(trackNameIndex > trackNames.length - 1 && artistNameIndex > artistNames.length - 1) {
+    trackNameIndex = 0;
+    artistNameIndex = 0;
+  };
+  startSong (trackNames[trackNameIndex], artistNames[artistNameIndex]);
+  playSong();
+};
+
+function prevSong() {
+  trackNameIndex --;
+  artistNameIndex --;
+  if(trackNameIndex < 0  && artistNameIndex < 0) {
+    trackNameIndex = trackNames.length - 1;
+    artistNameIndex = artistNames.length - 1;
+  };
+  startSong (trackNames[trackNameIndex], artistNames[artistNameIndex]);
+  playSong();
+};
+
+nextBtn.addEventListener('click', nextSong);
+prevBtn.addEventListener('click', prevSong);

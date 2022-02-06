@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   padding: 0;
   font-family: 'Permanent Marker', cursive;
@@ -38,6 +38,7 @@ body::before {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .player {
@@ -133,14 +134,15 @@ body::before {
 
 .footer {
   max-width: 100%;
+  height: 75px;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   max-width: 100%;
+  height: 100%;
   background: linear-gradient(to bottom, rgba(133,189,224,1) 0%, rgba(47,83,111,1) 100%);
 }
 
