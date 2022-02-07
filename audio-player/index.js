@@ -1,4 +1,9 @@
-console.log();
+console.log(`1.	Вёрстка +10
+2.	Кнопка Play/Pause +10
+3.	При кликах по кнопкам "Вперёд" и "Назад" переключается проигрываемый аудиотрек. Аудиотреки пролистываются по кругу - после последнего идёт первый +10
+4.	При смене аудиотрека меняется изображение - обложка аудиотрека +10
+5.	Прогресс-бар отображает прогресс проигрывания текущего аудиотрека. При перемещении ползунка вручную меняется текущее время проигрывания аудиотрека +10
+6.	Отображается продолжительность аудиотрека и его текущее время проигрывания +10`);
 
 const player = document.querySelector('.player');
 const song = document.querySelector('.song');
@@ -79,4 +84,19 @@ song.addEventListener('timeupdate', (event) => {
 progressLine.addEventListener('click', (event) => {
   let fullProgress = progressLine.clientWidth;
   song.currentTime = (event.offsetX / fullProgress) * song.duration;
+});
+
+const initTime = document.querySelector('.init-time');
+const finishTime = document.querySelector('.finish-time');
+
+song.addEventListener('timeupdate', () => {
+  let min = parseInt(song.currentTime / 60);
+  let sec = parseInt(song.currentTime % 60);
+  sec < 10 ? initTime.textContent = `${min}:${'0' + sec}` : initTime.textContent = `${min}:${sec}`;
+});
+
+song.addEventListener('loadeddata', () => {
+  let min = parseInt(song.duration / 60);
+  let sec = parseInt(song.duration % 60);
+  sec < 10 ? finishTime.textContent = `${min}:${'0' + sec}` : finishTime.textContent = `${min}:${sec}`;
 });
