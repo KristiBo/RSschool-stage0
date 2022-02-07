@@ -41,7 +41,7 @@ body {
   max-height: 500px;
   margin: auto 10px;
   padding: 20px 15px;
-  gap: 20px;
+  gap: 15px;
   border: 2px solid #010014;
   border-radius: 20px;
   background: linear-gradient(to bottom, rgba(133,189,224,1) 0%, rgba(47,83,111,1) 100%);
@@ -102,10 +102,11 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-top: -5px;
   gap: 30px;
 }
 
-.button {  
+.button {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -125,6 +126,41 @@ body {
 .play-img {
   max-width: 50px;
   max-height: 50px;
+}
+
+.volume {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 67%;
+  margin-top: 5px;
+}
+
+.volume-line {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.volume-level {
+  background: #010014;
+  border-radius: 5px;
+  width: 100%;
+  height: 10px;
+  transition: 0.2s;
+}
+
+.volumedown,
+.volumeup {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer {
