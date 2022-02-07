@@ -6,39 +6,30 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   margin: 0 auto;
-  padding: 0;
+  height: 100vh;
   font-family: 'Permanent Marker', cursive;
-  font-size: 22px;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  left: 0; 
-  right: 0;
-  top: 0; 
-  bottom: 0;
-  z-index: -1;
+  font-size: 20px;
   background-image: url('./assets/image/bcgsong1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-
-.main-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
 }
 
 .player {
@@ -46,10 +37,11 @@ body::before {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 450px;
-  max-height: 800px;
-  width: 100%;
-  margin: 50px auto;
+  width: 300px;
+  max-height: 500px;
+  margin: auto 10px;
+  padding: 20px 15px;
+  gap: 20px;
   border: 2px solid #010014;
   border-radius: 20px;
   background: linear-gradient(to bottom, rgba(133,189,224,1) 0%, rgba(47,83,111,1) 100%);
@@ -57,9 +49,7 @@ body::before {
 }
 
 .song-img {
-  max-width: 300px;
-  width: 100%;
-  margin: 50px auto;
+  max-width: 200px;
   border-radius: 20px;
   box-shadow: 0px 0px 30px 10px rgba(1,0,20,1);
 }
@@ -69,9 +59,7 @@ body::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 10px;
-  font-size: 36px;
+  font-size: 26px;
 }
 
 .track {
@@ -79,15 +67,17 @@ body::before {
 }
 
 .artist {
-  font-size: 32px;
+  font-size: 22px;
   color: #800000;
+}
+
+.progress-time {
+  width: 90%;
 }
 
 .progress-line {
   display: flex;
   align-items: center;
-  margin: 30px auto;
-  width: 80%;
   height: 10px;
   border-radius: 5px;
   background: #ffffff;
@@ -101,13 +91,18 @@ body::before {
   transition: 0.2s;
 }
 
+.time {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
 .player-buttons {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  margin-bottom: 40px;
-  margin-top: 5px;
-  gap: 40px;
+  gap: 30px;
 }
 
 .button {  
@@ -123,27 +118,28 @@ body::before {
 
 .prev-img,
 .next-img {
-  width: 30px;
-  height: 30px;
+  max-width: 20px;
+  max-height: 20px;
 }
 
 .play-img {
-  width: 70px;
-  height: 70px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .footer {
-  max-width: 100%;
-  height: 75px;
+  width: 100%;
+  max-height: 10%;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(133,189,224,1) 0%, rgba(47,83,111,1) 100%);
+  padding: 5px 20px;
+  background: linear-gradient(to bottom, rgba(133,189,224,0.5) 0%, rgba(47,83,111,0.5) 100%);
 }
 
 .year-github {
@@ -164,11 +160,11 @@ body::before {
 }
 
 .github {
-  max-width: 50px;
+  max-width: 40px;
   width: 100%;
 }
 
 .rs {
-  max-width: 140px;
+  max-height: 40px;
   width: 100%;
 }

@@ -42,6 +42,7 @@ function startSong (trackName, artistName) {
   artist.innerHTML = artistName;
   song.src = `./assets/audio/${trackName}.mp3`;
   songImg.src = `./assets/image/bcgsong${trackNameIndex + 1}.jpg`;
+  document.body.style.backgroundImage = `url(./assets/image/bcgsong${trackNameIndex + 1}.jpg)`;
 };
 
 function nextSong() {
