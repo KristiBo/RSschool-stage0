@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  background-image: url('./assets/image/bcgsong1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(5px);
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  max-height: 500px;
+  margin: auto 10px;
+  padding: 20px 15px;
+  gap: 20px;
+  border: 2px solid #010014;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, rgba(133,189,224,1) 0%, rgba(47,83,111,1) 100%);
+  box-shadow: 0px 0px 30px 20px rgba(1,0,20,1);
+}
+
+.song-img {
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 10px rgba(1,0,20,1);
+}
+
+.song-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+.track {
+  color: #010014;
+}
+
+.artist {
+  font-size: 22px;
+  color: #800000;
+}
+
+.progress-time {
+  width: 90%;
+}
+
+.progress-line {
+  display: flex;
+  align-items: center;
+  height: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.song-progress {
+  background: #010014;
+  border-radius: 5px;
+  height: 10px;
+  transition: 0.2s;
+}
+
+.time {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.player-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.button {  
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.button:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(101%);
+}
+
+.prev-img,
+.next-img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.play-img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.footer {
+  width: 100%;
+  max-height: 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px;
+  background: linear-gradient(to bottom, rgba(133,189,224,0.5) 0%, rgba(47,83,111,0.5) 100%);
+}
+
+.year-github {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.github-link,
+.rs-link {
+  transition: 1s;
+}
+
+.github-link:hover,
+.rs-link:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(101%);
+}
+
+.github {
+  max-width: 40px;
+  width: 100%;
+}
+
+.rs {
+  max-height: 40px;
+  width: 100%;
+}
