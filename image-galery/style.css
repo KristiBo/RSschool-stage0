@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: 'Redressed', cursive;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.input-search {
+  width: 250px;
+  height: 40px;
+  border-radius: 25px;
+  border: 1px solid #000000;
+  outline: none;
+}
+
+.search-img {
+  width: 20px;
+  height: 20px;
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.footer {
+  width: 100%;
+  max-height: 10%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px 20px;
+  background: linear-gradient(to bottom, rgba(133,189,224,0.5) 0%, rgba(47,83,111,0.5) 100%);
+}
+
+.year-github {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.github-link,
+.rs-link {
+  transition: 1s;
+}
+
+.github-link:hover,
+.rs-link:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(207deg) brightness(102%) contrast(101%);
+}
+
+.github {
+  max-width: 40px;
+  width: 100%;
+}
+
+.rs {
+  max-height: 40px;
+  width: 100%;
+}
