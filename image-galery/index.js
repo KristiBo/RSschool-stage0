@@ -7,10 +7,10 @@ const startUrl = 'https://api.unsplash.com/search/photos?query=architecture&per_
 let searchUrl = 'https://api.unsplash.com/search/photos?per_page=24&orientation=squarish&client_id=Ytg9bYYiHSnGt-M1cFA1mPBnbm2dXkkGJQr9DHIZWzU&query=';
 
 async function getData(url) {
+  photoContainer.innerHTML = '';
   const resp = await fetch(url);
   const data = await resp.json();
   showData(data);
-  console.log(data);
 };
 
 function showData(data) {
@@ -21,3 +21,9 @@ function showData(data) {
 };
 
 getData(startUrl);
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const newSearch = `${searchUrl}${search.value}`;
+  getData(newSearch);
+});
