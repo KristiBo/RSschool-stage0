@@ -3,7 +3,7 @@ console.log()
 const form = document.querySelector('.search-container');
 const search = document.querySelector('.input-search');
 const photoContainer = document.querySelector('.photo-container');
-const startUrl = 'https://api.unsplash.com/search/photos?query=architecture&per_page=24&orientation=squarish&client_id=Ytg9bYYiHSnGt-M1cFA1mPBnbm2dXkkGJQr9DHIZWzU';
+const startUrl = 'https://api.unsplash.com/search/photos?query=switzerland&per_page=24&orientation=squarish&client_id=Ytg9bYYiHSnGt-M1cFA1mPBnbm2dXkkGJQr9DHIZWzU';
 let searchUrl = 'https://api.unsplash.com/search/photos?per_page=24&orientation=squarish&client_id=Ytg9bYYiHSnGt-M1cFA1mPBnbm2dXkkGJQr9DHIZWzU&query=';
 
 async function getData(url) {
