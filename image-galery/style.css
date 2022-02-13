@@ -52,6 +52,16 @@ header {
   width: auto;
 }
 
+a {
+  text-decoration: none;
+  color: #97D3AF;
+  transition: 0.5s;
+}
+
+a:hover {
+  filter: grayscale(100%);
+}
+
 .logo {
   display: flex;
   width: 40px;
@@ -85,10 +95,10 @@ header {
 .photo-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
-  gap: 30px;
-  
+  gap: 30px;  
 }
 
 .photo {
@@ -96,6 +106,12 @@ header {
   height: 430px;
   border-radius: 10px;
   box-shadow:  8px 10px 15px 0px rgba(0,0,0,0.75);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.photo:hover {
+  filter: brightness(110%) contrast(115%);
 }
 
 .footer {
@@ -152,8 +168,8 @@ header {
     gap: 20px;    
   }  
   .photo {
-    width: 320px;
-    height: 320px;
+    width: 45%;
+    height: 7.7%;
   }
 }
 
@@ -177,9 +193,11 @@ header {
   .input-search:focus {
     width: 210px;
   }
+  .photo-container{
+    justify-content: space-around;
+  }
   .photo {
-    width: 40%;
-    height: 7%;
+    height: 7.6%;
   }
   .footer-container {
     padding: 10px 30px 5px;
@@ -214,6 +232,9 @@ header {
   .input-search:focus {
     width: 150px;
     height: 25px;
+  }
+  .photo {
+    height: 7.3%;
   }
   .footer-container {
     padding: 10px 20px 5px;
