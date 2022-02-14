@@ -87,6 +87,10 @@ a:hover {
   box-shadow: 0px 0px 10px 5px rgba(151,211,175,1);
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+  filter: grayscale(100%);
+}
+
 .main {
   display: flex;
   flex: 1 1 auto;
@@ -106,12 +110,12 @@ a:hover {
   height: 430px;
   border-radius: 10px;
   box-shadow:  8px 10px 15px 0px rgba(0,0,0,0.75);
-  cursor: pointer;
   transition: 0.3s;
 }
 
 .photo:hover {
-  filter: brightness(110%) contrast(115%);
+  transform: scale(1.1);
+  filter: brightness(105%) contrast(110%);
 }
 
 .footer {
