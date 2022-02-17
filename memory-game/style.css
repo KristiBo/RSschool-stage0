@@ -12,8 +12,8 @@ body {
   height: 100vh;
   font-family: 'Redressed', cursive;
   font-size: 20px;
-  color: #97D3AF;
-  background-color: #004445;
+  color: #F2EDE4;
+  background: linear-gradient(45deg, rgba(122,194,214,1) 0%, rgba(94,178,201,1) 0%, rgba(82,153,177,1) 20%, rgba(36,52,81,1) 100%);
 }
 
 .container {
@@ -40,13 +40,44 @@ header {
   width: 100%;
   height: 100%;
   gap: 15px;
-  border-bottom: 2mm ridge #97D3AF;
+  border-bottom: 2mm ridge #F2EDE4;
 }
 
 .main {
   display: flex;
   flex: 1 1 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.front-card,
+.back-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/*.front-card {
+  background-color: ;
+}*/
+
+/*.back-card {
+  display: none;
+}*/
 
 .footer {
   width: 100%;
@@ -60,7 +91,7 @@ header {
   width: 100%;
   height: 100%;
   padding: 10px 50px 5px;
-  border-top: 2mm ridge #97D3AF;
+  border-top: 2mm ridge #F2EDE4;
 }
 
 .year-github {
@@ -73,7 +104,6 @@ header {
 .github-link,
 .rs-link {
   transition: 1s;
-  filter: invert(86%) sepia(0%) saturate(1364%) hue-rotate(52deg) brightness(86%) contrast(76%);
 }
 
 .github-link:hover,
