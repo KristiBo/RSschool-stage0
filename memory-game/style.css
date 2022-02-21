@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
+  color: #F2EDE4;
+  background: linear-gradient(45deg, rgba(122,194,214,1) 0%, rgba(94,178,201,1) 0%, rgba(82,153,177,1) 20%, rgba(36,52,81,1) 100%);
+}
+
+.container {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;  
+}
+
+.main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 90%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.start-btn {
+  font-size: 4em;
+  background: none;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  opacity: 0.7;  
+}
+
+.text {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 2em;
+}
+
+.cards-container {
+  display: none;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.card:active {
+  transform: scale(0.9);
+}
+
+.card.spin {
+  transform: rotateY(180deg);
+}
+
+.front-card,
+.back-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.front-card {
+  padding: 15px;
+  background-color: rgba(122,194,214,0.6);
+  transform: rotateY(180deg);
+}
+
+.back-card:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 10%;
+  border-top: 2mm ridge #5eb2c9;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  padding: 5px;  
+}
+
+.year-github {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.github-link,
+.rs-link {
+  transition: 1s;
+  filter: invert(100%);
+}
+
+.github-link:hover,
+.rs-link:hover {
+  opacity: 0.5;
+}
+
+.github {
+  max-width: 35px;
+  width: 100%;
+}
+
+.rs {
+  max-height: 35px;
+  width: 100%;
+}
+
+.result-btn,
+.modal-btn {
+  font-size: 1.5em;
+  border-radius: 5px;
+  background: rgba(122,194,214,0.6);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.result-btn {
+  width: 110px;
+  height: 100%;
+}
+
+.modal {
+
+}
+
+.modal.open .overlay,
+.modal.open .modal-window {
+  opacity: 1;
+  z-index: 10;
+}
+
+.overlay,
+.modal-window {
+  opacity: 0;
+  z-index: -1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.75);
+  transition: all 1s ease;
+}
+
+.modal-window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100%;
+  transition: all 1s ease;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 20px;
+  width: 350px;
+  height: 210px;
+  background-color: rgba(82,153,177,0.85);
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+}
+
+.modal-title {
+  font-size: 2em;
+}
+
+.modal-text {
+  font-size: 1.5em;
+}
+
+.modal-btn {
+  width: 80px;
+  height: 35px;
+}
+
+@media (max-width: 1399px) {
+  .card {
+    width: 110px;
+    height: 110px;
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 16px;
+  }
+  .start-btn {
+    font-size: 3em;
+  }
+  .cards-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+  .footer-container {
+    width: 95%;
+  }
+  .github {
+    max-width: 30px;
+  }
+  .rs {
+    max-height: 30px;
+  }
+  .result-btn {
+    width: 90px;
+    height: 90%;
+  }
+  .modal-content {
+    width: 300px;
+    height: 190px;
+  }
+}
+
+@media (max-width: 390px) {
+  .card {
+    width: 65px;
+    height: 65px;
+  }
+  .footer-container {
+    width: 100%;
+  }
+  .modal-content {
+    gap: 15px;
+    width: 250px;
+    height: 170px;
+  }
+}
