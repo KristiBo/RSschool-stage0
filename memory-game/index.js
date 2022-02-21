@@ -1,6 +1,6 @@
 console.log(`Доброго дня! 
 По возможности, прошу перепроверить работу в четверг.
-Немного не успела доделать.
+Не успела сделать хранилище.
 Благодарю!
 
 1. Вёрстка +10
@@ -16,9 +16,11 @@ const cardsContainer = document.querySelector('.cards-container');
 const cards = document.querySelectorAll('.card');
 const stepsCount = document.querySelector('.steps');
 const resultBtn = document.querySelector('.result-btn');
-const modal = document.querySelector('.modal'); 
-const modalBtn = document.querySelector('.modal-btn');
-const modalEndText = document.querySelector('.modal-text');
+const resultModal = document.querySelector('.results-modal');
+const resultText = document.querySelector('results-text');
+const modalEnd = document.querySelector('.modal-end');
+const modalBtn = document.querySelectorAll('.modal-btn');
+const modalEndText = document.querySelector('.end-text');
 
 let steps = 0;
 let firstCard;
@@ -110,12 +112,20 @@ function endGameReset() {
 };
 
 function openEndModal() {
-  modal.classList.add('open');
+  modalEnd.classList.add('open');
   modalEndText.textContent = `Your result is ${steps} steps`;
 }
 
-function closeModal() {
-  modal.classList.remove('open');
+function openResultModal() {
+  resultModal.classList.add('open');
+  //resultText.textContent = `Win with ${steps} steps`;//
 }
 
-modalBtn.addEventListener('click', closeModal);
+function closeModal() {
+  modalEnd.classList.remove('open');
+  resultModal.classList.remove('open');
+}
+
+resultBtn.addEventListener('click', openResultModal);
+
+modalBtn.forEach(el => el.addEventListener('click', closeModal));
