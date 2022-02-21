@@ -173,10 +173,6 @@ p {
   height: 100%;
 }
 
-.modal {
-
-}
-
 .modal.open .overlay,
 .modal.open .modal-window {
   opacity: 1;
