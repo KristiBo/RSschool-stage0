@@ -33,7 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 90%;
+  height: 90%;
 }
 
 .btn {
