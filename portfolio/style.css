@@ -12,7 +12,7 @@ body {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -32,7 +32,7 @@ ul {
 
 h1 {
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-style: normal;
   font-size: 60px;
@@ -41,7 +41,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-style: normal;
   font-size: 40px;
@@ -52,7 +52,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: bold;
   font-style: normal;
   font-size: 28px;
@@ -62,7 +62,7 @@ h3 {
 
 h4 {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 20px;
@@ -93,10 +93,6 @@ h4 {
   transition: 0.5s;
 }
 
-.logo:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-}
-
 .nav {
   margin-left: auto;
   margin-right: 30px;
@@ -118,10 +114,6 @@ h4 {
   transition: 0.5s;
 }
 
-.nav-link:hover {
-  color: #bdae82;
-}
-
 .lang-container {
   font-weight: bold;
   line-height: 50px;
@@ -139,11 +131,6 @@ h4 {
   cursor: default;
 }
 
-.lang-ru:hover,
-.lang-en:hover {
-  color: #bdae82;
-}
-
 .lang-burger {
   display: flex;
   flex-wrap: nowrap;
@@ -158,12 +145,6 @@ h4 {
   height: 45px;
   background: url('./assets/svg/sun.svg');
   background-repeat: no-repeat;
-}
-
-.theme-btn:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 .moon-btn {
@@ -184,7 +165,7 @@ h4 {
     font-size: 32px;
     line-height: 64px;
   }
-  
+
   h2 {
     font-size: 32px;
     line-height: 40px;
@@ -194,7 +175,7 @@ h4 {
     justify-content: space-between;
     background-image: url('./assets/img/bg-768.jpg');
   }
-  
+
   .logo {
     margin-left: 40px;
   }
@@ -256,7 +237,7 @@ h4 {
 
   .burger::before,
   .burger::after {
-    content: "";
+    content: '';
   }
 
   .burger::before {
@@ -313,8 +294,8 @@ h4 {
 
 @media (max-width: 768px) {
   .hero-container {
-  height: 500px;
-  background-image: url('./assets/img/bg-768.jpg');
+    height: 500px;
+    background-image: url('./assets/img/bg-768.jpg');
   }
 }
 
@@ -335,7 +316,7 @@ h4 {
     font-size: 28px;
     line-height: 56px;
   }
-  
+
   h2 {
     font-size: 28px;
     line-height: 56px;
@@ -360,7 +341,7 @@ h4 {
 
 .button {
   margin: 0;
-  border: 2px solid #BDAE82;
+  border: 2px solid #bdae82;
   width: 220px;
   height: 55px;
   font-family: inherit;
@@ -377,24 +358,14 @@ h4 {
   }
 }
 
-.button:hover {
-  color: #ffffff;
-}
-
 .button-colored {
   line-height: 40px;
   background-color: #bdae82;
   color: #000000;
 }
 
-.btn-animated:hover,
-.btn-animated:focus {
-	box-shadow: 0 0 0 15px rgba(189, 174, 130, 0);
-	animation: pulse 1.5s infinite;  
-}
-
 @keyframes pulse {
-	0% {
+  0% {
     box-shadow: 0 0 0 0 #bdae82;
   }
 }
@@ -453,14 +424,14 @@ h4 {
 }
 
 .section-title::before {
-  content: "";
+  content: '';
   margin-right: 20px;
   flex-basis: 50%;
   border-bottom: 2px solid #bdae82;
 }
 
 .section-title::after {
-  content: "";
+  content: '';
   margin-left: 20px;
   flex-basis: 50%;
   border-bottom: 2px solid #bdae82;
@@ -536,7 +507,7 @@ h4 {
 @media (max-width: 480px) {
   .skills-section {
     max-width: 100%;
-}
+  }
 }
 
 .portfolio-section {
@@ -623,10 +594,6 @@ h4 {
   }
 }
 
-.video-button:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-}
-
 .price-section {
   padding-top: 100px;
 }
@@ -675,7 +642,7 @@ h4 {
 .price-usd {
   display: inline-block;
   padding-top: 20px;
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -685,7 +652,7 @@ h4 {
 
 .price-content {
   padding: 20px 0 40px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
@@ -758,7 +725,7 @@ h4 {
   min-height: 50px;
   border: 2px solid #bdae82;
   background-color: rgba(0, 0, 0, 0.5);
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -781,13 +748,13 @@ h4 {
 }
 
 @media (max-width: 768px) {
-  .contacts-form button{
+  .contacts-form button {
     margin-left: 115px;
   }
 }
 
 @media (max-width: 480px) {
-  .contacts-form button{
+  .contacts-form button {
     margin: 0;
   }
 }
@@ -846,20 +813,12 @@ a {
   transition: 0.5s;
 }
 
-a:hover {
-  color: #bdae82;
-}
-
 .icon-item {
   cursor: pointer;
   transition: 0.5s;
 }
 
-.icon-item:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-}
-
- body.sun-theme {
+body.sun-theme {
   background-color: #ffffff;
 }
 
@@ -875,12 +834,6 @@ a:hover {
 .section-title.sun-theme::before,
 .section-title.sun-theme::after {
   border-bottom: 2px solid #000000;
-}
-
-.portfolio-btn.sun-theme:hover {
-  transition: 0.5s;
-  color: #ffffff;
-  background-color: #bdae82;
 }
 
 .button-colored.sun-theme {
@@ -912,5 +865,58 @@ a:hover {
   .burger.open.sun-theme::before,
   .burger.open.sun-theme::after {
     background-color: #000000;
+  }
+}
+
+@media (hover: hover) {
+  .logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
+  }
+
+  .nav-link:hover {
+    color: #bdae82;
+  }
+
+  .lang-ru:hover,
+  .lang-en:hover {
+    color: #bdae82;
+  }
+
+  .theme-btn:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .button:hover {
+    color: #ffffff;
+  }
+
+  .btn-animated:hover,
+  .btn-animated:focus {
+    box-shadow: 0 0 0 15px rgba(189, 174, 130, 0);
+    animation: pulse 1.5s infinite;
+  }
+
+  .video-button:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
+  }
+
+  a:hover {
+    color: #bdae82;
+  }
+
+  .icon-item:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
+  }
+
+  .portfolio-btn.sun-theme:hover {
+    transition: 0.5s;
+    color: #ffffff;
+    background-color: #bdae82;
   }
 }
