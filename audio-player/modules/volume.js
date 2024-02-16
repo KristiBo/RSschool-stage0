@@ -14,6 +14,14 @@ const muteSound = () => {
     volumeImg.src = `./assets/png/volumedown.png`;
     volumeLevel.style.width = `${song.volume * 100}%`;
   }
-}
+};
+
+const changeVolume = (event) => {
+  const fullVolume = volumeLine.clientWidth;
+  song.volume = event.offsetX / fullVolume;
+  volumeLevel.style.width = `${song.volume * 100}%`;
+};
 
 volumeDown.addEventListener('click', muteSound);
+
+volumeLine.addEventListener('click', (e) => changeVolume(e));
