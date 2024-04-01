@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/favicon.ico">
+  <title>Memory Game</title>
+</head>
+<body>
+  <div class="container">
+    <main class="main">
+      <button class="btn start-btn">Let's play!</button>
+      <div class="text">
+        <p>Steps: <span class="steps"></span></p>
+      </div>
+      <div class="cards-container">
+        <div class="card" data-front="cat">
+          <img class="front-card" src="./assets/png/cat.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="cat">
+          <img class="front-card" src="./assets/png/cat.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="chicken">
+          <img class="front-card" src="./assets/png/chicken.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="chicken">
+          <img class="front-card" src="./assets/png/chicken.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="dog">
+          <img class="front-card" src="./assets/png/dog.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="dog">
+          <img class="front-card" src="./assets/png/dog.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="frog">
+          <img class="front-card" src="./assets/png/frog.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="frog">
+          <img class="front-card" src="./assets/png/frog.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="hamster">
+          <img class="front-card" src="./assets/png/hamster.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="hamster">
+          <img class="front-card" src="./assets/png/hamster.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="mouse">
+          <img class="front-card" src="./assets/png/mouse-toy.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="mouse">
+          <img class="front-card" src="./assets/png/mouse-toy.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="rabbit">
+          <img class="front-card" src="./assets/png/rabbit.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="rabbit">
+          <img class="front-card" src="./assets/png/rabbit.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="rat">
+          <img class="front-card" src="./assets/png/rat.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="rat">
+          <img class="front-card" src="./assets/png/rat.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="fish">
+          <img class="front-card" src="./assets/png/fish.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="fish">
+          <img class="front-card" src="./assets/png/fish.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="tarantula">
+          <img class="front-card" src="./assets/png/tarantula.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+        <div class="card" data-front="tarantula">
+          <img class="front-card" src="./assets/png/tarantula.png" alt="image">
+          <img class="back-card" src="./assets/png/back.png" alt="image">
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="year-github">
+          <span>© 2022</span>
+          <div class="github-link">
+            <a href="https://github.com/KristiBo" target="_blank" rel="noopener noreferrer">
+              <img class="github" src="./assets/svg/github.svg" alt="Github">
+            </a>
+          </div>
+        </div>
+        <button class="btn result-btn">Results</button>
+        <div class="rs-link">
+          <a href="https://rs.school/js-stage0/" target="_blank" rel="noopener noreferrer">
+            <img class="rs" src="./assets/svg/rsschool.svg" alt="RSSchool">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal-end">
+      <div class="overlay">
+        <div class="modal-window">
+          <div class="modal-content">
+            <span class="modal-title">Game over!</span>
+            <span class="modal-text end-text"></span>
+            <button class="btn modal-btn">ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal results-modal">
+      <div class="overlay">
+        <div class="modal-window">
+          <div class="modal-content results-content">
+            <span class="modal-title">Game results</span>
+            <ol class="modal-text results-text"></ol>
+            <button class="btn modal-btn">ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="index.js"></script>
+</body>
+</html>
